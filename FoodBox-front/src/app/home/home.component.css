@@ -1,0 +1,18 @@
+.carousel-inner{
+height: 750px;
+}
+.carousel-caption{
+    top:200px;
+}
+img{
+    color: black;
+}
+.btn{
+border-radius: 30px;
+}
+.btn:hover{
+border: 3px solid !important;
+border-color:blue !important;
+background-color: transparent !important;
+
+}

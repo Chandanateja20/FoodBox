@@ -1,0 +1,14 @@
+
+.size{
+    max-width: 30%;
+}
+input.ng-invalid{
+    border-left: 5px solid red;
+}
+
+input.ng-valid{
+    border-left: 5px solid green;
+}
+form{
+    text-align: center;
+}

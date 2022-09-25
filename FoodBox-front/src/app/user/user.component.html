@@ -1,0 +1,72 @@
+<!-- <div style="text-align: center">
+    <img src="../assets/loginimg.jpg">
+    <h1>Welcome User ..! </h1>
+    <div>
+        <form #userForm="ngForm" (ngSubmit)="onSubmitData(userForm.value)">
+           <div class="form-inline" >
+                <label>User name<span style="color: red" *ngIf="username.invalid">*</span> :  </label>
+                <input type="text" class="form-control" ngModel #username="ngModel" name="username" required><br>
+                <span *ngIf="username.invalid && username.touched" style="color: red">user name is Requried....!</span>
+           </div>
+           
+           <div class="form-inline">
+            <label>UserPassword<span style="color: red" *ngIf="userpass.invalid">*</span> :  </label>
+                <input type="text" class="form-control" ngModel #userpass="ngModel" required name="userpass" required><br>
+                <span *ngIf="userpass.invalid &&  userpass.touched" style="color: red">password is Requried....!</span>
+            </div>
+            <div class="form-inline">
+                <label>User Email<span style="color: red" *ngIf="userForm.invalid">*</span> :  </label>
+                    <input type="text" class="form-control" ngModel #userForm="ngModel" required name="usermail" required><br>
+                    <span *ngIf="userForm.invalid &&  userForm.touched" style="color: red">Email is Requried....!</span>
+                </div>
+       <button type="submit" class="btn btn-primary" routerLink="/menu"> LOGIN </button><br><br>
+       <span>New user Register now...!</span>
+       <button type="submit" class="btn btn-success"  routerLink="/register">REGISTER</button>
+        </form>
+    </div>
+</div> -->
+
+
+<app-navbar></app-navbar>
+<!-- Section: Design Block -->
+<section class=" text-center text-lg-start">
+   
+    <div class="card mb-3">
+      <div class="row g-0 d-flex align-items-center">
+        <div class="col-lg-4 d-none d-lg-flex">
+          <img src="https://mdbootstrap.com/img/new/ecommerce/vertical/004.jpg" alt="Trendy Pants and Shoes"
+            class="w-100 rounded-t-5 rounded-tr-lg-0 rounded-bl-lg-5" />
+        </div>
+        <div class="col-lg-8">
+          <div class="card-body py-5 px-md-5">
+  
+            <form #userForm="ngForm" (ngSubmit)="onSubmitData(userForm.value)">
+                <div class="form-outline mb-4 text-left" >
+                     <label>User name<span style="color: red" *ngIf="username.invalid">*</span> :  </label>
+                     <input type="text" class="form-control" ngModel #username="ngModel" name="username" required placeholder="Username"><br>
+                     <span *ngIf="username.invalid && username.touched" style="color: red">user name is Requried....!</span>
+                </div>
+                
+                <div class="form-outline mb-4 text-left">
+                 <label>UserPassword<span style="color: red" *ngIf="userpass.invalid">*</span> :  </label>
+                     <input type="text" class="form-control" ngModel #userpass="ngModel" required name="userpass" required placeholder="Password"><br>
+                     <span *ngIf="userpass.invalid &&  userpass.touched" style="color: red">password is Requried....!</span>
+                 </div>
+                 <div class="form-outline mb-4 text-left">
+                     <label>User Email<span style="color: red" *ngIf="userForm.invalid">*</span> :  </label>
+                         <input type="text" class="form-control" ngModel #userForm="ngModel" required name="usermail" required placeholder="Email"><br>
+                         <span *ngIf="userForm.invalid &&  userForm.touched" style="color: red">Email is Requried....!</span>
+                     </div>
+            <button type="submit" class="btn btn-primary btn-block mb-4" (click)="loginto()"> LOGIN </button><br><br>
+
+            New User <a routerLink="/register">Click Register !</a>
+            <!-- <span>New user Register now...!</span>
+            <button type="submit" class="btn btn-success"  routerLink="/register">REGISTER</button> -->
+             </form>
+  
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Section: Design Block -->
